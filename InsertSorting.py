@@ -8,11 +8,11 @@ def InsertSorting(testList, length):
             if testList[j]>key:
                 testList[j+1] = testList[j]
                 flag = True
-                
+                #if it finds a place to insert turn the flag to True for future control
             if flag:
                 testList[j] = key
                 flag = False
-     
+				#Important to set the flag back once finished inserting item at the end of the list
     return testList
 
 if __name__ == '__main__':
